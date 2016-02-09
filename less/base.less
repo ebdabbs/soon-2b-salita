@@ -1,0 +1,59 @@
+@import "variables.less";
+body {
+  font-family: 'Pontano Sans', sans-serif;
+  background-color: @color-background;
+  color: @color-primary;
+  .container {
+    background-color: white;
+    padding: 0;
+    nav, footer {
+      background-color: @color-secondary;
+      font-size: 20px;
+      li {
+        list-style-type: none;
+        display: inline-flex;
+        padding: 15px;
+        a {
+          color: white;
+        }
+        a:hover {
+          color: @color-text;
+          text-decoration: none;
+        }
+        .active {
+          color: @color-primary;
+        }
+      }
+    }
+    footer {
+      background-color: @color-footer;
+      margin-top: 4%;
+      a {
+        i {
+          color: white;
+        }
+        i:hover {
+          color: @color-text;
+        }
+      }
+
+    }
+    button {
+      background-color: @color-secondary;
+      color: white;
+    }
+    button:hover {
+      background-color: @color-accent;
+      color: white;
+    }
+  }
+}
+.cursive {
+  font-family: 'Great Vibes', cursive;
+}
+.center {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
