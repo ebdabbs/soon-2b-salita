@@ -22,7 +22,7 @@
       border: solid 2px white;
       display: inline-flex;
       margin: 5px;
-      background-color: rgba(21,176,140,0.5);
+      background-color: rgba(21,176,140,0.7);
       a {
         color: white;
         padding: 10px 15px;
@@ -33,7 +33,19 @@
       }
     }
     .link-button:hover {
+      background-color: rgba(21,176,140,0.9);
+    }
+    .inactive {
       background-color: rgba(21,176,140,0.3);
+      border-radius: 5px;
+      border: solid 2px white;
+      display: inline-flex;
+      margin: 5px;
+      cursor: not-allowed;
+      h4 {
+        color: white;
+        padding: 10px 15px;
+      }
     }
   }
 }
