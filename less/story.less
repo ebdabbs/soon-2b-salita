@@ -1,0 +1,54 @@
+@import "variables.less";
+#our-story {
+  p {
+    margin: 10px 0;
+  }
+  .text-col {
+    .make-md-column(9);
+    .make-sm-column(8);
+  }
+  .pic-col {
+    .make-md-column(3);
+    .make-sm-column(4);
+    .story-pic {
+      padding: 10px;
+      height: 250px;
+      width: 100%;
+      background-color: @color-secondary;
+      border-radius: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      max-width: 250px;
+      margin: auto;
+    }
+    @media(max-width: @screen-sm-max) {
+      .story-pic {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+
+  #homecoming {
+    background-image: url('../img/homecoming.jpg');
+  }
+  #graduation {
+    background-image: url('../img/graduation.jpg');
+  }
+  #nerds {
+    background-image: url('../img/nerds.JPG');
+  }
+  #wpb {
+    background-image: url('../img/wbp.jpg');
+  }
+  #ring {
+    background-image: url('../img/ring.JPG');
+  }
+  #friends {
+    background-image: url('../img/friends.jpg');
+  }
+  #family {
+    background-image: url('../img/family.jpg');
+  }
+
+}
