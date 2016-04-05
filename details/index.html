@@ -3,10 +3,81 @@ layout: default
 title: The Big Day
 ---
 <div id="details">
-    <h1 class="cursive center">The Big Day</h1>
     <div class="row" style="margin: 0;">
-        <div class="col-sm-12">
-            <p>Details Coming Soon</p>
+        <div class="main-img center">
+            <div id="clockdiv">
+                <div class="time-elem">
+                    <div id="days" class="number"></div>Days
+                </div>
+                <div class="time-elem">
+                    <div id="hours" class="number"></div>Hours
+                </div>
+                <div class="time-elem">
+                    <div id="minutes" class="number"></div>Minutes
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row info" style="margin: 0;">
+        <div class="col-sm-2 left">Ceremony</div>
+        <div class="col-sm-5 middle">
+            <span>Where: </span> Cathedral of the Sacred Heart <br>
+            <a href="https://goo.gl/maps/vnw6WtzWtLS2">800 S Cathedral Pl, Richmond, VA 23220</a> <br>
+            <span>When: </span> 2:00 PM <br> Saturday, March 11<sup>th</sup>, 2017
+        </div>
+        <div class="col-sm-4">
+            <a href="http://www.richmondcathedral.org/">
+                <div class="right" id="cathedral"></div>
+            </a>
+        </div>
+    </div>
+    <div class="row info" style="margin: 0;">
+        <div class="col-sm-2 left">Reception</div>
+        <div class="col-sm-5 middle">
+            <span>Where: </span> Willow Oaks Country Club <br>
+            <a href="https://goo.gl/maps/9ggrRMZ9E812">6228 Forest Hill Ave, Richmond, VA 23225</a> <br>
+            <span>When: </span> 3:30 - 8:30 PM <br> Saturday, March 11<sup>th</sup>, 2017
+        </div>
+        <div class="col-sm-4">
+            <a href="http://www.willowoakscc.org/">
+                <div class="right" id="willow-oaks"></div>
+            </a>
         </div>
     </div>
 </div>
+
+<script>
+    var deadline = 'March 11 2017 14:00:00 GMT-04:00';
+    function getTimeRemaining(endtime){
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var minutes = Math.floor( (t/1000/60) % 60 );
+        var hours = Math.floor( (t/(1000*60*60)) % 24 );
+        var days = Math.floor(t/(1000*60*60*24));
+        return {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes
+        };
+    }
+
+    function initClock(endtime) {
+        var days = document.getElementById("days");
+        var hours = document.getElementById("hours");
+        var minutes = document.getElementById("minutes");
+        var t = getTimeRemaining(endtime);
+        days.innerHTML =  t.days;
+        hours.innerHTML =  t.hours;
+        minutes.innerHTML = t.minutes;
+        var timeinterval = setInterval(function(){
+            var t = getTimeRemaining(endtime);
+            days.innerHTML =  t.days;
+            hours.innerHTML =  t.hours;
+            minutes.innerHTML = t.minutes;
+            if (t.total <= 0){
+                clearInterval(timeinterval);
+            }
+        }, 10000);
+    }
+    initClock(deadline);
+</script>

@@ -1,0 +1,79 @@
+@import "variables.less";
+#details {
+  .main-img {
+    //background-image: url('../img/rva.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: -10px auto 0 0;
+    background-position: center !important;
+    color: white;
+    background:
+      /* overlay by gradient */
+            linear-gradient(
+                    rgba(0, 0, 60, 0.3),
+                    rgba(0, 0, 60, 0.3)
+            ),
+              /* bottom, image */
+            url('../img/rva.JPG');
+    #clockdiv{
+      padding: 5% 0 4% 0;
+      display: inline-flex;
+      .time-elem {
+        padding: 10px;
+        font-size: 30px;
+        width: 100%;
+        .number {
+          border: solid white;
+          font-size: 65px;
+          padding-top: 30px;
+          height: 150px;
+          width: 150px;
+          border-radius: 50%;
+        }
+        @media(max-width: @screen-sm) {
+          .number {
+            font-size: 40px;
+            height: 75px;
+            width: 75px;
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+    #clockdiv:before {
+      content: " ";
+      z-index: 10;
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+  .info {
+    padding: 3% 0 0 0;
+    .left{
+      font-size: 22px;
+      text-transform: uppercase;
+      text-align: right;
+    }
+    .middle {
+      font-size: 18px;
+      span{
+        font-family: 'Great Vibes', cursive;
+        font-size: 28px;
+      }
+    }
+    .right {
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 225px;
+      border-radius: 10px;
+    }
+    #willow-oaks {
+      background-image: url("../img/willowOaks.gif");
+    }
+    #cathedral {
+      background-image: url("../img/cathedral.jpg");
+    }
+  }
+}

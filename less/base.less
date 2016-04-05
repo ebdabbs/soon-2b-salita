@@ -33,13 +33,20 @@ body {
     footer {
       background-color: @color-footer;
       margin-top: 4%;
+      ul {
+        padding-left: 0;
+        a {
+          i {
+            color: white;
+          }
+          i:hover {
+            color: @color-text;
+          }
+        }
+      }
       a {
-        i {
-          color: white;
-        }
-        i:hover {
-          color: @color-text;
-        }
+        color: white;
+        font-size: 14px;
       }
     }
   }
