@@ -1,12 +1,20 @@
 /**
  * Created by elizabethdabbs on 2/10/16.
  */
-$(function() {
-    var pgurl = window.location.href.substr(window.location.href
-            .lastIndexOf("/")+1);
-    $("#nav ul li a").each(function(){
-        if($(this).attr("href") == pgurl || $(this).attr("href") == '' )
-            $(this).addClass("active");
-    })
+jQuery(document).ready(function ($) {
+    var pathname = window.location.pathname;
+    console.log(pathname);
+    if (pathname == '/photos/') {
+        $('#nav-photos').addClass('active');
+    }
+    if (pathname == '/details/') {
+        $('#nav-details').addClass('active');
+    }
+    if (pathname == '/bridal-party/') {
+        $('#nav-party').addClass('active');
+    }
+    if (pathname == '/our-story/') {
+        $('#nav-story').addClass('active');
+    }
 });
 

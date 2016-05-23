@@ -1,0 +1,44 @@
+@import "variables.less";
+#bridal-party {
+  h1 {
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+  .bridal-photo {
+    height: auto;
+    width: 100%;
+    background-color: @color-secondary;
+    border-radius: 50%;
+    margin: 15px;
+  }
+  .bridal-photo:before{
+    content: "";
+    display: block;
+    padding-top: 100%; 	/*  ratio of 1:1*/
+  }
+  h2 {
+    color: @color-text;
+    font-weight: lighter;
+    font-family: 'Arapey', serif;
+  }
+  h3 {
+    color: @color-accent;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  h4 {
+    color: @color-primary;
+    font-weight: bold;
+    font-family: 'Arapey', serif;
+    font-size: 20px;
+  }
+  .left {
+    padding-left: 15px;
+  }
+  .right {
+    padding-right: 15px;
+  }
+}
