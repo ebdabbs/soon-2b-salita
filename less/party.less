@@ -1,8 +1,12 @@
 @import "variables.less";
 #bridal-party {
+  padding-bottom: 30px;
   h1 {
     margin-top: 25px;
     margin-bottom: 30px;
+  }
+  .party {
+    margin: 0;
   }
   .bridal-photo {
     height: auto;
@@ -40,5 +44,34 @@
   }
   .right {
     padding-right: 15px;
+  }
+  #last-row {
+    background-color: @color-accent;
+    #allyson {
+      background-color: white;
+    }
+    #love {
+      #love-text{
+        font-family: 'Indie Flower', cursive;
+        color: white;
+        padding: 15% 0 0 0;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        font-size: 30px;
+        @media (max-width: @screen-sm-max) {
+          padding-top: 2%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: @screen-sm-max) {
+    .left {
+      padding: 0 15px;
+    }
+    .right {
+      padding: 0 15px;
+    }
   }
 }
