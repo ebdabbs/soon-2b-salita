@@ -12,7 +12,10 @@ body {
   .container {
     background-color: white;
     padding: 0;
-    #nav {
+    #mobile-nav, #overlay {
+      display: none;
+    }
+    .nav-primary {
       background-color: @color-secondary;
       font-size: 20px;
       ul {
@@ -38,6 +41,72 @@ body {
           a {
             color: @color-text;
             text-decoration: none;
+          }
+        }
+      }
+    }
+    @media (max-width: @screen-sm-max) {
+      #nav {
+        display: none;
+      }
+      #mobile-nav {
+        background-color: @color-text;
+        color: white;
+        display: inline-flex;
+        width: 100%;
+        height: 50px;
+        position: relative;
+        z-index: 5;
+        .menu-button {
+          right: 1px;
+          position: absolute;
+          padding: 5px 15px;
+          font-size: 25px;
+          &#open-menu {
+            &.nav-is-visible {
+              display: none;
+            }
+          }
+          &#close-menu {
+            display: none;
+            &.nav-is-visible {
+              display: block;
+              z-index: 6;
+            }
+          }
+        }
+        #hashtag-mobile {
+          font-family: 'Indie Flower', cursive;
+          padding: 10px 15px;
+          //color: #8a8a8a;
+        }
+      }
+      #overlay {
+        &.nav-is-visible{
+          padding-top: 50px;
+          display: block;
+          background-color: rgba(195, 180, 250, 0.95);
+          position: fixed;
+          z-index: 4;
+          height: 100%;
+          width: 100%;
+          top:0;
+          left: 0;
+          ul {
+            padding-top: 15px;
+            list-style-type: none;
+            li {
+              padding: 5px 0;
+              a {
+                font-weight: bold;
+                color: @color-primary;
+                font-size: 18px;
+                text-transform: uppercase;
+              }
+              a:hover {
+                color: white;
+              }
+            }
           }
         }
       }

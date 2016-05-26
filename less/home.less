@@ -13,9 +13,7 @@
     color: @color-text;
   }
   #hashtag {
-    //padding-top: 10px;
     color: white;
-    //font-weight: bold;
     text-align: right;
     padding-right: 2%;
     float: right;
@@ -23,7 +21,6 @@
     font-family: 'Indie Flower', cursive;
   }
   #hashtag:hover {
-    //color: @color-background;
     text-decoration: none !important;
   }
   .buttons {
@@ -56,6 +53,25 @@
       h4 {
         color: white;
         padding: 10px 15px;
+      }
+    }
+  }
+  @media (max-width: @screen-sm-max) {
+    .main-img{
+      margin-top: 0;
+      padding: 18% 0 25% 0;
+    }
+    #hashtag{
+      display: none;
+    }
+    #title {
+      font-size: 300%;
+    }
+    .buttons {
+      .link-button, .inactive{
+        display: block;
+        width: 75%;
+        margin: 10px auto;
       }
     }
   }
