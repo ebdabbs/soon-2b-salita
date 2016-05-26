@@ -58,7 +58,7 @@ body {
         position: relative;
         z-index: 5;
         .menu-button {
-          right: 1px;
+          right: 5px;
           position: absolute;
           padding: 5px 15px;
           font-size: 25px;
@@ -75,11 +75,17 @@ body {
             }
           }
         }
-        #hashtag-mobile {
-          font-family: 'Indie Flower', cursive;
-          padding: 10px 15px;
-          //color: #8a8a8a;
+        a {
+          &#hashtag-mobile {
+            font-family: 'Indie Flower', cursive;
+            padding: 10px 15px;
+            color: white;
+          }
+          &:hover {
+            text-decoration: none;
+          }
         }
+
       }
       #overlay {
         &.nav-is-visible{
