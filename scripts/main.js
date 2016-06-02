@@ -16,6 +16,12 @@ jQuery(document).ready(function ($) {
     if (pathname == '/our-story/') {
         $('.nav-story').addClass('active');
     }
+    if (pathname == '/registry/') {
+        $('.nav-registry').addClass('active');
+    }
+    if (pathname == '/contact/') {
+        $('.nav-contact').addClass('active');
+    }
 
     $( "#open-menu" ).click(function() {
         openNav();

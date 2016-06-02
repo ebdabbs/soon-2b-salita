@@ -1,20 +1,19 @@
 @import "variables.less";
 #details {
   .main-img {
-    //background-image: url('../img/rva.JPG');
     background-size: cover;
     background-repeat: no-repeat;
     margin: -10px auto 0 0;
-    background-position: center !important;
+    background-position: bottom;
     color: white;
-    background:
+    background-image: url('../img/covers/sand.jpg');
       /* overlay by gradient */
-            linear-gradient(
-                    rgba(0, 0, 60, 0.3),
-                    rgba(0, 0, 60, 0.3)
-            ),
+            //linear-gradient(
+            //        rgba(0, 0, 60, 0.3),
+            //        rgba(0, 0, 60, 0.3)
+            //),
               /* bottom, image */
-            url('../img/rva.JPG');
+
     #clockdiv{
       padding: 5% 0 4% 0;
       display: inline-flex;
@@ -81,6 +80,7 @@
     }
     #cathedral {
       background-image: url("../img/cathedral.jpg");
+      background-position: center;
     }
   }
 }
