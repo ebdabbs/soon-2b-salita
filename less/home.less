@@ -68,7 +68,26 @@
       font-size: 300%;
     }
     .buttons {
-      .link-button, .inactive{
+      .link-button {
+        display: block;
+        width: 50%;
+        margin: 10px auto;
+      }
+    }
+  }
+  @media (max-width: @screen-xs-max) {
+    .main-img{
+      margin-top: 0;
+      padding: 18% 0 25% 0;
+    }
+    #hashtag{
+      display: none;
+    }
+    #title {
+      font-size: 300%;
+    }
+    .buttons {
+      .link-button {
         display: block;
         width: 75%;
         margin: 10px auto;
