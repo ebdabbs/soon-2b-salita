@@ -25,23 +25,5 @@ jQuery(document).ready(function ($) {
     if (pathname == '/contact/') {
         $('.nav-contact').addClass('active');
     }
-
-    $( "#open-menu" ).click(function() {
-        openNav();
-    });
-
-    $( "#close-menu" ).click(function() {
-        closeNav();
-    });
-
-    function openNav() {
-        $('.menu-button').addClass('nav-is-visible');
-        $('#overlay').addClass('nav-is-visible');
-    }
-
-    function closeNav() {
-        $('.menu-button').removeClass('nav-is-visible');
-        $('#overlay').removeClass('nav-is-visible');
-    }
 });
 

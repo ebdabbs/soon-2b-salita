@@ -1,6 +1,7 @@
 @import "variables.less";
 body {
-  font-family: 'Pontano Sans', sans-serif !important;
+  //font-family: 'Pontano Sans', sans-serif !important;
+  font-family: 'Quicksand', sans-serif;
   background-color: @color-background !important;
   color: @color-primary !important;
   p {
@@ -12,112 +13,36 @@ body {
   .container {
     background-color: white;
     padding: 0;
-    #mobile-nav, #overlay {
-      display: none;
-    }
-    .nav-primary {
+    .navbar-default {
+      border-radius: 0;
       background-color: @color-secondary;
-      font-size: 20px;
-      ul {
-        li {
-          list-style-type: none;
-          display: inline-flex;
-          a {
-            color: @color-primary;
-            font-size: 18px;
-            padding: 15px;
-          }
-          &.active {
-            //background-color: white;
-            //border-bottom: solid 3px @blooms-dark;
-            a {
-              text-decoration: none;
-              border-bottom: solid 3px @color-primary;
-            }
-          }
+      color: @color-primary;
+      font-size: 15px;
+      .navbar-toggle {
+        border: none;
+        background-color: transparent;
+      }
+      a {
+        color: @color-primary;
+        &:hover {
+          color: @color-text;
         }
-        li:hover {
-          //background-color: white;
-          cursor: pointer;
+      }
+      li {
+        &.active {
           a {
-            text-decoration: none;
-            border-bottom: solid 3px @color-primary;
+            background-color: @color-secondary;
+            color: @color-text;
+            &:hover {
+              background-color: @color-secondary;
+              color: @color-text;
+            }
           }
         }
       }
-    }
-    @media (max-width: @screen-sm-max) {
-      #nav {
-        display: none;
-      }
-      #mobile-nav {
-        background-color: @color-text;
-        color: @blooms-pale;
-        display: inline-flex;
-        width: 100%;
-        height: 50px;
-        position: fixed;
-        z-index: 20;
-        .menu-button {
-          right: 5px;
-          position: absolute;
-          padding: 5px 15px;
-          font-size: 25px;
-          &#open-menu {
-            &.nav-is-visible {
-              display: none;
-            }
-          }
-          &#close-menu {
-            display: none;
-            &.nav-is-visible {
-              display: block;
-              z-index: 6;
-            }
-          }
-        }
-        a {
-          &#hashtag-mobile {
-            font-family: 'Indie Flower', cursive;
-            padding: 10px 15px;
-            color: white;
-          }
-          &:hover {
-            text-decoration: none;
-          }
-        }
 
-      }
-      #overlay {
-        &.nav-is-visible{
-          padding-top: 50px;
-          display: block;
-          background-color: rgba(195, 180, 250, 0.95);
-          position: fixed;
-          z-index: 16;
-          height: 100%;
-          width: 100%;
-          top:0;
-          left: 0;
-          ul {
-            padding-top: 15px;
-            list-style-type: none;
-            li {
-              padding: 8px 0;
-              a {
-                font-weight: bold;
-                color: @color-primary;
-                font-size: 18px;
-                text-transform: uppercase;
-              }
-              a:hover {
-                color: white;
-              }
-            }
-          }
-        }
-      }
     }
+
     footer {
       background-color: @color-footer;
       font-size: 20px;
@@ -143,7 +68,7 @@ body {
       background-color: @color-background;
       padding: 10px 0;
       a {
-        color: @color-text;
+        color: @color-primary;
         font-size: 14px;
       }
     }
@@ -153,7 +78,9 @@ body {
   font-family: 'Great Vibes', cursive;
 }
 .serif {
-  font-family: 'Arapey', serif;
+  //font-family: 'Arapey', serif;
+  //font-family: 'Open Sans', sans-serif;
+  //font-family: 'Quicksand', sans-serif;
 }
 .center {
   display: block;
@@ -170,29 +97,7 @@ body {
     width: 100%;
   }
 }
-.top-decor {
-  background-image: url("../img/top-decor.png");
-  height: 80px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 70%;
-  @media(max-width: @screen-sm-max){
-    width: 100%;
-  }
-}
-.zag {
-  background-image: url("../img/zag.png");
-  height: 40px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.right-arrow {
-  background-image: url("../img/right_arrow.png");
-  height: 30px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 15px;
-}
+
 .zero {
   margin: 15px 0;
 }
