@@ -1,7 +1,6 @@
 @import "variables.less";
 #photos {
   #myCarousel {
-    margin-top: -20px;
     img {
       object-fit: contain;
       margin: auto;
@@ -43,7 +42,10 @@
       margin-bottom: 30px;
     }
   }
-  @media screen and (max-width: @screen-sm-max) {
-    margin-top: 65px;
+  .thumbnail {
+    .caption {
+      color: @color-primary;
+      font-size: 12px;
+    }
   }
 }

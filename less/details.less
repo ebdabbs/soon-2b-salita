@@ -3,7 +3,6 @@
   .main-img {
     background-size: cover;
     background-repeat: no-repeat;
-    margin: -20px auto 0 0;
     background-position: bottom;
     color: white;
     background-image: url('../img/covers/sand.jpg');
@@ -55,18 +54,19 @@
       text-transform: uppercase;
       text-align: right;
       font-weight: bold;
+
     }
     .middle {
-      font-size: 18px;
-      span{
-        font-family: 'Great Vibes', cursive;
-        font-size: 28px;
-      }
-      a {
+      //font-size: 18px;
+      .name {
         color: @color-accent;
         h4 {
           font-weight: bold;
+          font-size: 20px;
         }
+      }
+      .address {
+        color: @color-primary;
       }
     }
     .right {
@@ -84,6 +84,19 @@
     }
   }
   @media screen and (max-width: @screen-sm-max) {
-    margin-top: 65px;
+    .left, .middle, .right {
+      padding-bottom: 15px;
+      a {
+        h4 {
+          font-size: 22px;
+        }
+      }
+    }
+    .image-col {
+      padding: 15px 0;
+      .right {
+        border-radius: 0;
+      }
+    }
   }
 }

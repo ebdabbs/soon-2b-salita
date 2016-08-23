@@ -4,10 +4,12 @@ body {
   font-family: 'Quicksand', sans-serif;
   background-color: @color-background !important;
   color: @color-primary !important;
+  font-size: 18px;
   p {
-    font-size: 16px !important;
+    font-size: 16px;
     @media(max-width: @screen-sm-max){
       padding: auto 15px auto 30px;
+      font-size: 22px;
     }
   }
   .container {
@@ -18,6 +20,7 @@ body {
       background-color: @color-secondary;
       color: @color-primary;
       font-size: 15px;
+      margin-bottom: 0;
       .navbar-toggle {
         border: none;
         background-color: transparent;
