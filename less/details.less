@@ -48,7 +48,16 @@
     }
   }
   .info {
-    padding: 3% 0 0 0;
+    padding: 3% 0 3% 0;
+    &.bg {
+      background-color: @color-primary;
+      .middle {
+        color: white;
+      }
+      h3 {
+        margin: 0 0 15px 0;
+      }
+    }
     .left{
       font-size: 22px;
       text-transform: uppercase;
@@ -60,13 +69,15 @@
       //font-size: 18px;
       .name {
         color: @color-accent;
-        h4 {
-          font-weight: bold;
-          font-size: 20px;
-        }
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 10px;
       }
       .address {
-        color: @color-primary;
+        color: @color-text;
+      }
+      i {
+        color: @color-accent;
       }
     }
     .right {
