@@ -49,17 +49,6 @@
   }
   .info {
     padding: 3% 0 3% 0;
-    &.bg {
-      background-color: @color-primary;
-      padding-left: 30px;
-      padding-right: 30px;
-      .middle {
-        color: white;
-      }
-      h3 {
-        margin: 0 0 15px 0;
-      }
-    }
     .left{
       font-size: 22px;
       text-transform: uppercase;
@@ -88,6 +77,24 @@
       height: 225px;
       border-radius: 10px;
     }
+    &.bg {
+      background-color: @color-primary;
+      padding-left: 30px;
+      padding-right: 30px;
+      .middle {
+        color: white;
+      }
+      h3 {
+        margin: 0 0 15px 0;
+      }
+      .bg-link {
+        color: white;
+        text-decoration: underline;
+        &:hover {
+          color: @color-accent;
+        }
+      }
+    }
     #willow-oaks {
       background-image: url("../img/willowOaks.gif");
     }
@@ -97,7 +104,11 @@
     }
   }
   @media screen and (max-width: @screen-sm-max) {
-    .left, .middle, .right {
+    p {
+      font-size: 16px;
+    }
+    .left, .right {
+      font-size: 22px;
       padding-bottom: 15px;
       a {
         h4 {
