@@ -139,24 +139,35 @@ title: The Big Day
 </div>
 
 <script>
-    var deadline = 'March 11 2017 14:00:00 GMT-04:00';
+    var deadline = 'March 11 2017 14:00:00 GMT-05:00';
     function getTimeRemaining(endtime){
         var t = Date.parse(endtime) - Date.parse(new Date());
-        var minutes = Math.floor( (t/1000/60) % 60 );
-        var hours = Math.floor( (t/(1000*60*60)) % 24 );
-        var days = Math.floor(t/(1000*60*60*24));
-        return {
-            'total': t,
-            'days': days,
-            'hours': hours,
-            'minutes': minutes
-        };
+        if (t > 0) {
+            var minutes = Math.floor( (t/1000/60) % 60 );
+            var hours = Math.floor( (t/(1000*60*60)) % 24 );
+            var days = Math.floor(t/(1000*60*60*24));
+            return {
+                'total': t,
+                'days': days,
+                'hours': hours,
+                'minutes': minutes
+            };
+        }
+        else {
+            return {
+                'total': 0,
+                'days': 0,
+                'hours': 0,
+                'minutes': 0
+            };
+        }
     }
 
     function initClock(endtime) {
         var days = document.getElementById("days");
         var hours = document.getElementById("hours");
         var minutes = document.getElementById("minutes");
+        var clock_div = document.getElementById("clockdiv");
         var t = getTimeRemaining(endtime);
         days.innerHTML =  t.days;
         hours.innerHTML =  t.hours;
@@ -166,9 +177,6 @@ title: The Big Day
             days.innerHTML =  t.days;
             hours.innerHTML =  t.hours;
             minutes.innerHTML = t.minutes;
-            if (t.total <= 0){
-                clearInterval(timeinterval);
-            }
         }, 10000);
     }
     initClock(deadline);
