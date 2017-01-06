@@ -71,6 +71,15 @@
         color: @color-accent;
       }
     }
+    p {
+      a {
+        text-decoration: underline;
+        color: @color-primary;
+        &:hover {
+          color: @color-accent;
+        }
+      }
+    }
     .right {
       background-size: cover;
       background-repeat: no-repeat;
@@ -116,6 +125,15 @@
         }
       }
     }
+    .info {
+      &.bg {
+        padding: 30px 15px;
+      }
+      .left {
+        text-align: left;
+      }
+    }
+
     .image-col {
       padding: 15px 0;
       .right {
