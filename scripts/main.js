@@ -25,5 +25,8 @@ jQuery(document).ready(function ($) {
     if (pathname == '/contact/') {
         $('.nav-contact').addClass('active');
     }
+    if (pathname == '/vendors/') {
+        $('.nav-vendors').addClass('active');
+    }
 });
 
