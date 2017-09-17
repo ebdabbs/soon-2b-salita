@@ -1,0 +1,65 @@
+- name: Emily Dabbs
+  id: emily
+  role: Maid of Honor
+  relationship: Sister of the Bride
+  description: Lizzie has known Emily since the day she was born. Literally. Their top notch April fools pranks, road trip shenanigans, and imaginative games of pretend were the highlights of Lizzie's childhood. As adults, they have grown into each others' confidants and best of friends while maintaining their mischievous synergy. Emily is currently studying visual art at the University of Mary Washington.
+  name2: Andy Salita
+  id2: andy
+  role2: Best Man
+  relationship2: Father of the Groom
+  description2: From soccer practices to drum lessons, Andy was always there leading and supporting Michael as he grew up. From days at the batting cages to nights playing poker, Andy and Michael were always able to have a good time. As he makes this final step into manhood, there's no one else he would rather have as his right hand man.
+
+- name: Helen Salita
+  id: helen
+  role: Bridesmaid
+  relationship: Sister of the Groom
+  description: Helen and Lizzie would have been friends even if Helen wasn't Michael's little sister. In high school, they both played clarinet and marched cymbals together. From watching Glee together to many Salita family functions, Helen has felt like a sister to Lizzie for many years. Helen is currently finishing up a dual degree in history and political science at the University of Mary Washington.
+  name2: Chris Arvin
+  id2: chris
+  role2: Groomsman
+  relationship2: Childhood Friend
+  description2: Chris and Michael first met at Tuckaway Barony daycare, and were then reunited when Michael moved to Three Chopt Presbyterian Church. From percussion class to playing FIFA, from youth group to beach trips, Chris is one of Michael's oldest friends. Chris is a sports writer for Virginia Tech and works with the youth program at Hope Church.
+
+- name: Maddie Wood
+  id: maddie
+  role: Bridesmaid
+  relationship: Childhood Friend
+  description: Maddie and Lizzie met when Lizzie moved to The Colonies in third grade. After they forged a path between the backyard separating their houses, the Wood's became like a second home for Lizzie. From middle school cotillion to high school beach week and beyond, Maddie's sense of humor and friendship have been a constant in Lizzie's life. Maddie attended Clemson University and is a nurse in Cleveland, Ohio.
+  name2: Cody Handshaw
+  id2: cody
+  role2: Groomsman
+  relationship2: High School Friend
+  description2: Cody and Michael first met at Godwin High School through a slew of mutual friends. However, their time spent at school in Farmville leading Bible studies, going bowling, and playing poker led to their becoming best buds. When Michael needed a couple to be the cover for the weekend of his proposal to Lizzie, Cody was the man he turned to. Cody attended Longwood University and is currently working in Richmond.
+
+- name: Meredith Arnold
+  id: meredith
+  role: Bridesmaid
+  relationship: Childhood Friend
+  description: Meredith and Lizzie first met in their third grade class at Nuckols Farm Elementary. They've grown up a lot since long walks around the neighborhood and "fishing" at Wild Lake, and it was through Meredith that Lizzie first heard of "Michael S" from her church. Meredith has been a consistent friend and support through their entire relationship, and we look forward to her continued loving presence! Meredith attended the University of Virginia for undergrad and is currently studying Occupational Therapy at VCU.
+  name2: Sydney Henriques
+  id2: sydney
+  role2: Groomsman
+  relationship2: College Friend
+  description2: To say that Sydney is the flyest guy Michael knows may be an understatement. Something closer to reality may be that Michael practically knows Christiano Ronaldo. In all seriousness though, Sydney has been one of Michael's best friends on the soccer field to the golf course and on to the world of finance following college. Sydney attended Hampden-Sydney College and is currently working in Atlanta, Georgia.
+
+- name: Skyler Paltell
+  id: skyler
+  role: Bridesmaid
+  relationship: College Roommate
+  description: After only knowing each other from passing glances in their freshman dorm, Lizzie and Skyler became roommates in the Gamma Phi Beta house, and they never looked back. They balanced each other out, and they might say they completed one another. Their range of crazy nights to dedicated support was most distinctly shown when Skyler flew in from Colorado to be there for Michael and Lizzie's engagement. Skyler studied English at the College and currently works as a consultant in Northern Virginia.
+  name2: Thomas Crenshaw
+  id2: thomas
+  role2: Groomsman
+  relationship2: College Roommate
+  description2: Let's be honest, wherever he goes, Thomas brings the party. Michael and Thomas lived together their last three years of college and spent long nights playing Grand Theft Auto and hanging out on the circle. Thomas currently works in Richmond, and as he was a photography major at Hampden-Sydney, Michael and Lizzie want to pass on a special thanks to Thomas for taking their engagement pictures.
+
+- name: Allyson Mateja
+  id: allyson
+  role: Bridesmaid
+  relationship: College Friend
+  description: Allyson and Lizzie's friendship blossomed as they worked together on the executive council of Gamma Phi Beta at William and Mary. Although they both lived in singles their senior year, they might as well have been roommates. Allyson is always up for an adventure and has been Lizzie's number one accomplice in checking off her William and Mary and DC bucket lists. Allyson studied biology and mathematics, and currently works as an analyst in Maryland.
+  name2: Max Zbinden
+  id2: max
+  role2: Groomsman
+  relationship2: College Roommate
+  description2: As Michael's roommate sophomore and senior year, Max has been one of Michael's best friends since college. Max's dedication to living life to the fullest is evident in everything he does. From road trips for movie premiers to watching each other play Skyrim, Max is always down for a good time. Max attended Hampden-Sydney College and is now an officer in the United States Army.
